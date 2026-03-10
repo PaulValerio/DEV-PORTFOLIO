@@ -57,7 +57,7 @@ html {
   background-clip: text;
   background-size: 100%;
   color: transparent;
-  filter: drop-shadow(0px 0px 5px rgb(140, 0, 255));
+  filter: drop-shadow(0px 0px 5px rgb(183, 0, 255));
   font-size: clamp(2rem, 6dvw, 10rem);
   z-index: 1;
   animation: fade-up 1s cubic-bezier(0.1, 1, 0.9, 1) forwards;
@@ -135,7 +135,7 @@ html {
   background-image: url(../Images/GalaxyWave.gif);
   background-clip: text;
   background-size: 100%;
-  filter: drop-shadow(0px 0px 5px rgb(140, 0, 255));
+  filter: drop-shadow(0px 0px 5px rgb(183, 0, 255));
   color: transparent;
   position: absolute;
   top: 50%;
