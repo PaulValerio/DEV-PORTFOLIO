@@ -1,7 +1,12 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 * {
-  margin: 0 !important;
-  padding: 0 !important;
-  box-sizing: border-box !important;
+  margin: 0;
+  padding: 0;
   font-family: "Aldrich";
 }
 
@@ -122,7 +127,7 @@ html {
   animation: fade-down 1s cubic-bezier(0.1, 1, 0.9, 1) forwards;
   animation-delay: 3s;
   transform: translateY(-10rem);
-  z-index: 9999;
+  z-index: 10;
   transition: background-color 500ms ease;
 }
 
@@ -333,7 +338,7 @@ h1 {
 .project-container::before {
   content: "";
   position: absolute;
-  inset: 50;
+  inset: 0;
   width: 150%;
   height: 150%;
   transform: translate(-50%, -50%);
@@ -413,13 +418,23 @@ h1 {
   animation-delay: 0.3s;
 }
 
+.contact-container.slideUp .col:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
 .contact-container img {
   transition:
     transform 500ms ease,
+    opacity 300ms ease,
     filter 500ms ease;
 }
 
-.contact-container img:hover {
+.contact-pg:hover a:nth-child(1) img {
+  opacity: 0;
+  transform: rotate3d(1, 1, -1, 45deg);
+}
+
+.contact-pg:hover a:nth-child(2) img {
   transform: rotate3d(1, 1, -1, 45deg);
   filter: drop-shadow(-100px 10px 0px var(--grey));
 }
@@ -457,6 +472,30 @@ h1 {
   transition: background-color 500ms ease;
 }
 /* FOOTER END */
+
+/* MODAL START */
+.modal-content {
+  background-color: var(--dark-blue) !important;
+  color: white !important;
+}
+
+.btn-close {
+  background-color: var(--transparentWhite) !important;
+  opacity: 1 !important;
+}
+
+.modal-header {
+  border-bottom: 2px solid rgb(0, 0, 255) !important;
+}
+
+.modal-header h5 {
+  font-size: clamp(0.8rem, 1dvw, 3rem) !important;
+}
+
+.modal-footer {
+  border-top: 2px solid rgb(0, 0, 255) !important;
+}
+/* MODAL END */
 
 /* For Phones */
 @media screen and (orientation: portrait) and (min-width: 300px) {

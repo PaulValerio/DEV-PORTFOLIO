@@ -27,7 +27,7 @@
     <!-- BACKGROUND IMG END -->
 
     <!-- LOADER START -->
-    <main
+    <section
       class="loader-front position-fixed top-0 w-100 vh-100 overflow-hidden d-flex justify-content-center align-items-center text-center"
     >
       <img
@@ -41,7 +41,7 @@
         class="purple-wave2 position-absolute top-100 start-50 h-100 translate-middle"
       />
       <h1>Welcome To My Portfolio</h1>
-    </main>
+    </section>
     <!-- LOADER END -->
 
     <!-- NAVBAR START -->
@@ -60,7 +60,7 @@
     <!-- NAVBAR START -->
 
     <!-- MAIN LANDING START -->
-    <main class="profile-container rounded-bottom-5 overflow-hidden">
+    <section class="profile-container rounded-bottom-5 overflow-hidden">
       <img
         src="./Images/Me.png"
         alt="Paul"
@@ -73,102 +73,112 @@
         <h2>Hello, I Am</h2>
         <h1 class="text-primary">Paul Ashlee T. Valerio</h1>
       </div>
-    </main>
+    </section>
     <!-- MAIN LANDING END -->
 
     <!-- ABOUT SECTION START -->
-    <main id="About" class="overflow-x-hidden">
-      <section class="about-anim text-center text-white mt-5">
+    <section id="About" class="overflow-x-hidden">
+      <div class="about-anim text-center text-white mt-5">
         <h1 class="text-primary">
           ABOUT ME + ABOUT ME + ABOUT ME + ABOUT ME + ABOUT ME + ABOUT ME
         </h1>
-      </section>
+      </div>
 
-      <section
+      <div
         class="aboutp d-flex justify-content-center align-items-center text-center text-white mb-5"
+        data-animate="slideRight"
       >
         <p>
           A Computer Engineering Student Aspiring To Be A Front End Developer.
         </p>
-      </section>
-    </main>
+      </div>
+    </section>
     <!-- ABOUT SECTION END -->
 
     <!-- TOOLS SECTION START -->
-    <main
+    <section
       id="Tools"
       class="overflow-x-hidden d-block justify-content-center align-items-center text-center"
     >
-      <h1 class="toolh1 text-primary mb-3">TOOL STACK</h1>
+      <h1 class="toolh1 text-primary mb-3" data-animate="slideLeft">
+        TOOL STACK
+      </h1>
 
-      <section class="d-flex justify-content-center align-items-center m-3">
+      <div class="d-flex justify-content-center align-items-center m-3">
         <div
           class="toolImg-container overflow-hidden p-5 row row-cols-4 row-cols-lg-6 gap-5 d-flex justify-content-center align-items-center"
         >
           <div
             class="toolImg col p-3 p-lg-5 bg-color d-flex align-items-center justify-content-center img-cover rounded-circle"
+            data-animate="fadeIn"
           >
             <img src="./Images/HTML.png" />
           </div>
 
           <div
             class="toolImg col p-3 p-lg-5 bg-color d-flex align-items-center justify-content-center img-cover rounded-circle"
+            data-animate="fadeIn"
           >
             <img src="./Images/CSS.png" />
           </div>
 
           <div
             class="toolImg col p-3 p-lg-5 bg-color d-flex align-items-center justify-content-center img-cover rounded-circle"
+            data-animate="fadeIn"
           >
             <img src="./Images/Bootstrap.png" />
           </div>
 
           <div
             class="toolImg col p-3 p-lg-5 bg-color d-flex align-items-center justify-content-center img-cover rounded-circle"
+            data-animate="fadeIn"
           >
             <img src="./Images/VScode.png" />
           </div>
 
           <div
             class="toolImg col p-3 p-lg-5 bg-color d-flex align-items-center justify-content-center img-cover rounded-circle"
+            data-animate="fadeIn"
           >
             <img src="./Images/KivyMD.png" />
           </div>
 
           <div
             class="toolImg col p-3 p-lg-5 bg-color d-flex align-items-center justify-content-center img-cover rounded-circle"
+            data-animate="fadeIn"
           >
             <img src="./Images/Python.png" />
           </div>
 
           <div
             class="toolImg col p-3 p-lg-5 bg-color d-flex align-items-center justify-content-center img-cover rounded-circle"
+            data-animate="fadeIn"
           >
             <img src="./Images/Githubc.png" />
           </div>
 
           <div
             class="toolImg col p-3 p-lg-5 bg-color d-flex align-items-center justify-content-center img-cover rounded-circle"
+            data-animate="fadeIn"
           >
             <img src="./Images/Claude.png" />
           </div>
 
           <div
             class="toolImg col p-3 p-lg-5 bg-color d-flex align-items-center justify-content-center img-cover rounded-circle"
+            data-animate="fadeIn"
           >
             <img src="./Images/ChatGPT.png" />
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
     <!-- TOOLS SECTION END -->
 
     <!-- PROJECTS SECTION START -->
-    <main id="Projects">
+    <section id="Projects">
       <h1 class="projecth1 text-primary text-center mb-5">MY PROJECTS</h1>
-      <section
-        class="d-flex flex-column justify-content-center align-items-center"
-      >
+      <div class="d-flex flex-column justify-content-center align-items-center">
         <div
           class="project-container p-3 p-lg-5 mb-5 my-lg-5 d-flex flex-column text-light justify-content-center align-items-center text-center"
         >
@@ -181,37 +191,24 @@
             />
           </div>
 
-          <div
-            popover
-            id="p-popover"
-            class="project-popover position-fixed top-50 start-50 translate-middle w-50 h-50 rounded p-3"
-          >
-            <button
-              class="btn-close bg-danger p-3 my-3 align-self-center"
-              popovertarget="p-popover"
-              popovertargetaction="hide"
-            ></button>
-
-            <img src="./Images/Portfolio.png" class="img-fluid rounded-3" />
-          </div>
-
           <p class="my-3">My Portfolio Website</p>
 
           <div class="d-flex w-100 justify-content-center align-items-center">
-            <button
-              class="project-btn me-3 me-lg-5 w-50 bg-dark text-white p-2 p-lg-3 rounded-pill"
-              popovertarget="p-popover"
-              popovertarget="bst-popover"
+            <a
+              class="project-btn me-3 me-lg-5 w-50 bg-dark text-white p-2 p-lg-3 rounded-pill text-decoration-none"
+              data-bs-toggle="modal"
+              data-bs-target="#pFolio"
             >
               View Screenshots
-            </button>
+            </a>
 
-            <button
-              class="project-btn w-50 bg-dark text-white p-2 p-lg-3 rounded-pill"
-              onclick="window.open('#')"
+            <a
+              class="project-btn w-50 bg-dark text-white p-2 p-lg-3 rounded-pill text-decoration-none"
+              target="_blank"
+              href="#"
             >
               Visit
-            </button>
+            </a>
           </div>
         </div>
 
@@ -232,44 +229,26 @@
             />
           </div>
 
-          <div
-            popover
-            id="bst-popover"
-            class="project-popover position-fixed top-50 start-50 translate-middle w-50 h-50 rounded p-3"
-          >
-            <button
-              class="btn-close bg-danger p-3 my-3 align-self-center"
-              popovertarget="bst-popover"
-              popovertargetaction="hide"
-            ></button>
-
-            <img src="./Images/BSTStart.png" class="img-fluid rounded-3 mb-2" />
-            <img src="./Images/BSTEnd.png" class="img-fluid rounded-3" />
-          </div>
-
           <p class="my-3">A App For Visualizing How Binary Search Tree Works</p>
 
           <div
             class="d-flex w-100 flex-row justify-content-center align-items-center"
           >
-            <button
-              class="project-btn me-3 me-lg-5 w-50 bg-dark text-white p-2 p-lg-3 rounded-pill"
-              popovertarget="bst-popover"
+            <a
+              class="project-btn me-3 me-lg-5 w-50 bg-dark text-white p-2 p-lg-3 rounded-pill text-decoration-none"
+              data-bs-toggle="modal"
+              data-bs-target="#bstV"
             >
               View Screenshots
-            </button>
+            </a>
 
-            <button
-              class="project-btn w-50 bg-dark text-white p-2 p-lg-3 rounded-pill"
-              onclick="
-                window.open(
-                  'https://github.com/PaulValerio/KivyProjects/tree/master/PythonProject2',
-                  '_blank',
-                )
-              "
+            <a
+              class="project-btn w-50 bg-dark text-white p-2 p-lg-3 rounded-pill text-decoration-none"
+              target="_blank"
+              href="https://github.com/PaulValerio/KivyProjects/tree/master/PythonProject2"
             >
               Visit
-            </button>
+            </a>
           </div>
         </div>
 
@@ -290,24 +269,6 @@
             />
           </div>
 
-          <div
-            popover
-            id="sac-popover"
-            class="project-popover position-fixed top-50 start-50 translate-middle w-50 h-50 rounded p-3"
-          >
-            <button
-              class="btn-close bg-danger p-3 my-3 align-self-center"
-              popovertarget="sac-popover"
-              popovertargetaction="hide"
-            ></button>
-
-            <img src="./Images/SchedAC.png" class="img-fluid rounded-3 mb-2" />
-            <img
-              src="./Images/SchedACHasValue.png"
-              class="img-fluid rounded-3"
-            />
-          </div>
-
           <p class="my-3">
             A App That Calculates The First Come First Serve (FCFS) And Shortest
             Remaining Time First (SRTF)
@@ -316,24 +277,21 @@
           <div
             class="d-flex w-100 flex-row justify-content-center align-items-center"
           >
-            <button
-              class="project-btn me-3 me-lg-5 w-50 bg-dark text-white p-2 p-lg-3 rounded-pill"
-              popovertarget="sac-popover"
+            <a
+              class="project-btn me-3 me-lg-5 w-50 bg-dark text-white p-2 p-lg-3 rounded-pill text-decoration-none"
+              data-bs-toggle="modal"
+              data-bs-target="#schedCalc"
             >
               View Screenshots
-            </button>
+            </a>
 
-            <button
-              class="project-btn w-50 bg-dark text-white p-2 p-lg-3 rounded-pill"
-              onclick="
-                window.open(
-                  'https://github.com/PaulValerio/KivyProjects/tree/master/PythonProject1',
-                  '_blank',
-                )
-              "
+            <a
+              class="project-btn w-50 bg-dark text-white p-2 p-lg-3 rounded-pill text-decoration-none"
+              target="_blank"
+              href="https://github.com/PaulValerio/KivyProjects/tree/master/PythonProject1"
             >
               Visit
-            </button>
+            </a>
           </div>
         </div>
 
@@ -354,39 +312,26 @@
             />
           </div>
 
-          <div
-            popover
-            id="od-popover"
-            class="project-popover position-fixed top-50 start-50 translate-middle w-50 h-50 rounded p-3"
-          >
-            <button
-              class="btn-close bg-danger p-3 my-3 align-self-center"
-              popovertarget="od-popover"
-              popovertargetaction="hide"
-            ></button>
-
-            <img src="./Images/LMods.png" class="img-fluid rounded-3 mb-2" />
-            <img src="./Images/DMods.png" class="img-fluid rounded-3" />
-          </div>
-
           <p class="my-3">A Dog Dating Website</p>
 
           <div
             class="d-flex w-100 flex-row justify-content-center align-items-center"
           >
-            <button
-              class="project-btn me-3 me-lg-5 w-50 bg-dark text-white p-2 p-lg-3 rounded-pill"
-              popovertarget="od-popover"
+            <a
+              class="project-btn me-3 me-lg-5 w-50 bg-dark text-white p-2 p-lg-3 rounded-pill text-decoration-none"
+              data-bs-toggle="modal"
+              data-bs-target="#oDogs"
             >
               View Screenshots
-            </button>
+            </a>
 
-            <button
-              class="project-btn w-50 bg-dark text-white p-2 p-lg-3 rounded-pill"
-              onclick="window.open('https://only-dogs.vercel.app/', '_blank')"
+            <a
+              class="project-btn w-50 bg-dark text-white p-2 p-lg-3 rounded-pill text-decoration-none"
+              target="_blank"
+              href="https://only-dogs.vercel.app/"
             >
               Visit
-            </button>
+            </a>
           </div>
         </div>
 
@@ -402,43 +347,26 @@
             />
           </div>
 
-          <div
-            popover
-            id="k-popover"
-            class="project-popover position-fixed top-50 start-50 translate-middle w-50 h-50 rounded p-3"
-          >
-            <button
-              class="btn-close bg-danger p-3 my-3 align-self-center"
-              popovertarget="k-popover"
-              popovertargetaction="hide"
-            ></button>
-
-            <img src="./Images/Kratos.png" class="img-fluid rounded-3 mb-2" />
-          </div>
-
           <p class="my-3">A character portfolio for Kratos from God Of War</p>
 
           <div
             class="d-flex w-100 flex-row justify-content-center align-items-center"
           >
-            <button
-              class="project-btn me-3 me-lg-5 w-50 bg-dark text-white p-2 p-lg-3 rounded-pill"
-              popovertarget="k-popover"
+            <a
+              class="project-btn me-3 me-lg-5 w-50 bg-dark text-white p-2 p-lg-3 rounded-pill text-decoration-none"
+              data-bs-toggle="modal"
+              data-bs-target="#kPort"
             >
               View Screenshots
-            </button>
+            </a>
 
-            <button
-              class="project-btn w-50 bg-dark text-white p-2 p-lg-3 rounded-pill"
-              onclick="
-                window.open(
-                  'https://paulvalerio.github.io/VALERIO-SD2/session11/',
-                  '_blank',
-                )
-              "
+            <a
+              class="project-btn w-50 bg-dark text-white p-2 p-lg-3 rounded-pill text-decoration-none"
+              target="_blank"
+              href="https://paulvalerio.github.io/VALERIO-SD2/session11/"
             >
               Visit
-            </button>
+            </a>
           </div>
         </div>
 
@@ -459,24 +387,6 @@
             />
           </div>
 
-          <div
-            popover
-            id="cc-popover"
-            class="project-popover position-fixed top-50 start-50 translate-middle w-50 h-50 rounded p-3"
-          >
-            <button
-              class="btn-close bg-danger p-3 my-3 align-self-center"
-              popovertarget="cc-popover"
-              popovertargetaction="hide"
-            ></button>
-
-            <img
-              src="./Images/LMHasValue.png"
-              class="img-fluid rounded-3 mb-2"
-            />
-            <img src="./Images/DMHasValue.png" class="img-fluid rounded-3" />
-          </div>
-
           <p class="my-3">
             A app that calculates the materials needed for walls
           </p>
@@ -484,63 +394,101 @@
           <div
             class="d-flex w-100 flex-row justify-content-center align-items-center"
           >
-            <button
-              class="project-btn me-3 me-lg-5 w-50 bg-dark text-white p-2 p-lg-3 rounded-pill"
-              popovertarget="cc-popover"
+            <a
+              class="project-btn me-3 me-lg-5 w-50 bg-dark text-white p-2 p-lg-3 rounded-pill text-decoration-none"
+              data-bs-toggle="modal"
+              data-bs-target="#cCalc"
             >
               View Screenshots
-            </button>
+            </a>
 
-            <button
-              class="project-btn w-50 bg-dark text-white p-2 p-lg-3 rounded-pill"
-              onclick="
-                window.open(
-                  'https://github.com/PaulValerio/KivyProjects/tree/master/PythonProject',
-                  '_blank',
-                )
-              "
+            <a
+              class="project-btn w-50 bg-dark text-white p-2 p-lg-3 rounded-pill text-decoration-none"
+              target="_blank"
+              href="https://github.com/PaulValerio/KivyProjects/tree/master/PythonProject"
             >
               Visit
-            </button>
+            </a>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
     <!-- PROJECTS SECTION END -->
 
     <!-- CONTACTS SECTION START -->
-    <main id="Contacts">
-      <section
+    <section id="Contacts">
+      <div
         class="d-flex vh-100 flex-column justify-content-center align-items-center text-light"
       >
         <h1 class="text-primary">CONTACT ME</h1>
-        <div class="contact-container container-fluid d-flex text-center">
-          <div class="col d-flex justify-content-center align-items-center">
+
+        <div
+          class="contact-container h-25 container-fluid d-flex text-center"
+          data-animate="slideUp"
+        >
+          <div
+            class="contact-pg col d-flex position-relative justify-content-center align-items-center"
+          >
             <a
               href="https://www.facebook.com/PaulAshlee.Valerio"
               target="_blank"
+              class="position-absolute z-2"
             >
               <img
                 src="./Images/Facebook.png"
                 alt="NoGIF"
                 class="w-50 img-fluid"
-            /></a>
-          </div>
+              />
+            </a>
 
-          <div class="col d-flex justify-content-center align-items-center">
-            <a href="https://github.com/PaulValerio" target="_blank">
+            <a
+              href="https://www.facebook.com/PaulAshlee.Valerio"
+              target="_blank"
+              class="position-absolute z-1"
+            >
               <img
-                src="./Images/Github.png"
+                src="./Images/Facebook.gif"
                 alt="NoGIF"
                 class="w-50 img-fluid"
               />
             </a>
           </div>
 
-          <div class="col d-flex justify-content-center align-items-center">
+          <div
+            class="contact-pg col d-flex position-relative justify-content-center align-items-center"
+          >
+            <a
+              href="https://github.com/PaulValerio"
+              target="_blank"
+              class="position-absolute z-2"
+            >
+              <img
+                src="./Images/Github.png"
+                alt="NoGIF"
+                class="w-50 img-fluid"
+              />
+            </a>
+
+            <a
+              href="https://github.com/PaulValerio"
+              target="_blank"
+              class="position-absolute z-1"
+            >
+              <img
+                src="./Images/Github.gif"
+                alt="NoGIF"
+                class="w-50 img-fluid"
+              />
+            </a>
+          </div>
+
+          <div
+            class="contact-pg col d-flex position-relative justify-content-center align-items-center"
+          >
             <a
               href="https://www.linkedin.com/in/paul-ashlee-valerio-3061a33b7/"
               target="_blank"
+              class="position-absolute z-2"
             >
               <img
                 src="./Images/Linkedin.png"
@@ -548,19 +496,225 @@
                 class="w-50 img-fluid"
               />
             </a>
+
+            <a
+              href="https://www.linkedin.com/in/paul-ashlee-valerio-3061a33b7/"
+              target="_blank"
+              class="position-absolute z-1"
+            >
+              <img
+                src="./Images/Linkedin.gif"
+                alt="NoGIF"
+                class="w-50 img-fluid"
+              />
+            </a>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
     <!-- CONTACTS SECTION END -->
 
     <!-- FOOTER START -->
     <footer
       class="footer p-3 text-white d-flex justify-content-center align-items-center"
     >
-      <p>© 2025 Paulforlio. All rights reserved.</p>
+      <p>© 2026 Paulforlio. All rights reserved.</p>
     </footer>
     <!-- FOOTER END -->
+
+    <!-- MODAL START -->
+    <div
+      class="modal fade"
+      id="pFolio"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="pForlioLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pForlioLabel" class="me-sm-3">
+              Paulfolio Screenshot
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <img src="./Images/Portfolio.png" class="img-fluid rounded-3" />
+          </div>
+
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="bstV"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="bstVLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="bstVLabel">
+              Binary Search Tree Visual App Screenshots
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <img src="./Images/BSTStart.png" class="img-fluid rounded-3 mb-2" />
+            <img src="./Images/BSTEnd.png" class="img-fluid rounded-3" />
+          </div>
+
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="schedCalc"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="schedCalcLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="schedCalcLabel">
+              Scheduling Algorithm Calculator Screenshots
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <img src="./Images/SchedAC.png" class="img-fluid rounded-3 mb-2" />
+            <img
+              src="./Images/SchedACHasValue.png"
+              class="img-fluid rounded-3"
+            />
+          </div>
+
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="oDogs"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="oDogsLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="oDogsLabel">Only Dogs Screenshots</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <img src="./Images/LMods.png" class="img-fluid rounded-3 mb-2" />
+            <img src="./Images/DMods.png" class="img-fluid rounded-3" />
+          </div>
+
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="kPort"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="kPortLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="kPortLabel">
+              Character Portfolio Screenshot
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <img src="./Images/Kratos.png" class="img-fluid rounded-3 mb-2" />
+          </div>
+
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="cCalc"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="cCalcLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cCalcLabel">Cement Calc Screenshots</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <img
+              src="./Images/LMHasValue.png"
+              class="img-fluid rounded-3 mb-2"
+            />
+            <img src="./Images/DMHasValue.png" class="img-fluid rounded-3" />
+          </div>
+
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL END -->
 
     <!-- Boostrap Script -->
     <script

@@ -3,48 +3,16 @@ const navchange = document.querySelector(".nav-bar");
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    if (entry.target.classList.contains("toolh1")) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("slideLeft");
-      } else {
-        entry.target.classList.remove("slideLeft");
-      }
-    }
+    const animClass = entry.target.dataset.animate;
+    console.log(animClass);
 
-    if (entry.target.classList.contains("aboutp")) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("slideRight");
-      } else {
-        entry.target.classList.remove("slideRight");
-      }
-    }
-
-    if (entry.target.classList.contains("toolImg")) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("fadeIn");
-      } else {
-        entry.target.classList.remove("fadeIn");
-      }
+    if (animClass) {
+      entry.target.classList.toggle(animClass, entry.isIntersecting);
     }
 
     if (entry.target.classList.contains("projecth1")) {
-      if (entry.isIntersecting) {
-        bgchange.classList.add("change-color");
-
-        navchange.classList.add("change-color");
-      } else {
-        bgchange.classList.remove("change-color");
-
-        navchange.classList.remove("change-color");
-      }
-    }
-
-    if (entry.target.classList.contains("contact-container")) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("slideUp");
-      } else {
-        entry.target.classList.remove("slideUp");
-      }
+      bgchange.classList.toggle("change-color", entry.isIntersecting);
+      navchange.classList.toggle("change-color", entry.isIntersecting);
     }
   });
 });
