@@ -4,7 +4,6 @@ const navchange = document.querySelector(".nav-bar");
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     const animClass = entry.target.dataset.animate;
-    console.log(animClass);
 
     if (animClass) {
       entry.target.classList.toggle(animClass, entry.isIntersecting);
