@@ -450,10 +450,6 @@ h1 {
   animation-delay: 0.3s;
 }
 
-.contact-container.slideUp .col:nth-child(3) {
-  animation-delay: 0.5s;
-}
-
 .contact-container img {
   transition:
     transform 500ms ease,
