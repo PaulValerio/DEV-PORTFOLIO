@@ -66,8 +66,14 @@ html {
   height: clamp(3rem, 5dvh, 6rem);
 }
 
+.arrow-container img:nth-child(1) {
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+
 .arrow-container img:nth-child(2) {
   opacity: 0;
+  transition: opacity 500ms ease;
 }
 
 .arrow-container:hover img:nth-child(1) {
