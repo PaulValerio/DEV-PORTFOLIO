@@ -52,8 +52,8 @@ html {
   position: fixed;
   bottom: 0.5rem;
   right: 0.5rem;
-  width: clamp(3.5rem, 4.5dvw, 5rem);
-  height: clamp(3rem, 5dvh, 6rem);
+  width: clamp(4rem, 4.5dvw, 5rem);
+  height: clamp(4rem, 4.5dvw, 5rem);
   background-color: var(--transparentWhite);
   z-index: 1000;
   opacity: 0;
@@ -62,8 +62,11 @@ html {
 }
 
 .arrow-container img {
-  width: clamp(3rem, 4dvw, 5rem);
-  height: clamp(3rem, 5dvh, 6rem);
+  width: clamp(3.5rem, 4dvw, 4.5rem);
+  height: clamp(3.5rem, 4dvh, 4.5rem);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .arrow-container img:nth-child(1) {
