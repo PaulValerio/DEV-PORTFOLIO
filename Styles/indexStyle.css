@@ -64,9 +64,6 @@ html {
 .arrow-container img {
   width: clamp(3.5rem, 4dvw, 4.5rem);
   height: clamp(3.5rem, 4dvh, 4.5rem);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .arrow-container img:nth-child(1) {
